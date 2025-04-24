@@ -1,2 +1,3 @@
 # Python_Intro
-TL Andrea Dominguez (ejercicio)
+TL Andrea Dominguez (ejercicios)
+
