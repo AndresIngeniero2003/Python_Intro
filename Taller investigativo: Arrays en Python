@@ -273,45 +273,126 @@ Ejemplo práctico:
 
     Ordena la lista [40, 10, 30, 20]:
         Primero en orden ascendente.
-         
+         mi_lista.sort()
         Luego en orden descendente.
+         mi_lista.sort(reverse=True)
         Crea una nueva lista ordenada sin modificar la original.
+         mi_lista_ordenada = sorted(mi_lista_original)
 
 9. ¿Cómo invertimos el orden de los elementos de una lista?
 
-    ¿Cómo invertir una lista usando reverse()?
-    ¿Cómo invertir una lista usando slicing?
+    * ¿Cómo invertir una lista usando reverse()?
+      R/
+      Una lista se puede invertir usando el metodo .reverse()
+      mi_lista = [1, 2, 3, 4, 5]
+      mi_lista.reverse()
+      print(mi_lista)  # Output: [5, 4, 3, 2, 1]
+
+    * ¿Cómo invertir una lista usando slicing?
+      R/
+      La técnica de slicing con un paso de -1 es una forma concisa de crear una nueva lista que contiene los elementos de la lista original en orden inverso.
+      nueva_lista = lista_original[::-1]
 
 Ejemplo práctico:
 
     Invierte el orden de [10, 20, 30, 40] utilizando ambas técnicas.
+      nueva_lista = mi_lista[::-1]
 
 10. ¿Cómo hacemos una copia de una lista?
 
-    ¿Cómo copiar una lista usando slicing?
-    ¿Cómo copiarla usando list()?
-    ¿Cómo copiarla usando copy()?
+    * ¿Cómo copiar una lista usando slicing?
+      R/
+      el slicing te permite crear una nueva lista que contiene los mismos elementos que la original, pero sin ser la misma lista en memoria. 
+      Esto significa que si modificas la copia, la lista original no se verá afectada, y viceversa.
+
+      lista_original = [10, 20, 30, 40, 50]
+      lista_copia = lista_original[:]
+      print(lista_copia)       # Output: [10, 20, 30, 40, 50]
+
+    * ¿Cómo copiarla usando list()?
+      R/
+      Cuando pasas una lista existente como argumento al constructor list(), este crea una nueva instancia de lista que contiene los mismos elementos que la lista original
+
+      lista_original = [100, 200, 300, 400, 500]
+      lista_copia = list(lista_original)
+      print(lista_copia)       # Output: [100, 200, 300, 400, 500]
+
+    * ¿Cómo copiarla usando copy()?
+      R/
+      las listas en Python tienen un método incorporado llamado copy() que está diseñado específicamente para crear una copia superficial de la lista.
+      Su uso es bastante directo y, en muchos casos, puede resultar muy legible.
+
+      lista_original = [1, 2, [3, 4]]
+      lista_copia = lista_original.copy()
+      print(lista_copia)       # Output: [1, 2, [3, 4]]
 
 Ejemplo práctico:
 
     Copia la lista [10, 20, 30] de tres maneras diferentes.
+      lista_copia = mi_lista.copy()
+      lista_copia = list(mi_lista)
+      lista_copia = mi_lista[:]
 
 11. ¿Cómo comprobamos si una lista está vacía?
 
-    ¿Cómo podemos saber si una lista no tiene elementos?
+    * ¿Cómo podemos saber si una lista no tiene elementos?
+      R/
+      Verificar la longitud de la lista usando len(): a función len() devuelve el número de elementos que contiene una lista. Si la longitud es 0, la lista está vacía.
+      mi_lista = []
+      if len(mi_lista) == 0:
+          print("La lista está vacía.")
+      else:
+          print("La lista tiene", len(mi_lista), "elementos.")
+   
+      Evaluar la lista directamente en un contexto booleano: las listas vacías se evalúan como False en un contexto booleano (como en una condición if). Las listas que contienen 
+      al menos un elemento se evalúan como True. Esta es una forma muy concisa y a menudo preferida por su legibilidad.
+   
+      mi_lista = []
+      if not mi_lista:  # Equivalente a if len(mi_lista) == 0:
+          print("La lista está vacía.")
+      else:
+       print("La lista tiene elementos.")
 
 Ejemplo práctico:
 
     Crea una lista vacía y escribe un código que imprima "La lista está vacía" si no contiene datos.
+        mi_lista = []
+      if not mi_lista:  # Equivalente a if len(mi_lista) == 0:
+          print("La lista está vacía.")
+      else:
+       print("La lista tiene elementos.")
 
 12. ¿Cómo pedir varios datos al usuario y almacenarlos en una lista?
 
-    ¿Cómo pedimos al usuario la cantidad de datos que quiere ingresar?
-    ¿Cómo almacenamos esos datos en una lista usando un ciclo for?
+    * ¿Cómo pedimos al usuario la cantidad de datos que quiere ingresar?
+      R/
+         cantidad_str = input("¿Cuántos datos quieres ingresar? Por favor, introduce un número entero: ")
+         cantidad = int(cantidad_str)
+         print(f"Vas a ingresar {cantidad} datos.")
+      
+    * ¿Cómo almacenamos esos datos en una lista usando un ciclo for?
+      R/
+      datos = []  # Inicializamos una lista vacía
+      for i in range(cantidad):
+       dato = input(f"Ingresa el dato número {i + 1}: ")
+       datos.append(dato)
+         
 
 Ejemplo práctico:
 
     Escribe un programa que:
         Pregunte al usuario cuántos elementos quiere ingresar.
+
+         cantidad_str = input("¿Cuántos datos quieres ingresar? Por favor, introduce un número entero: ")
+         cantidad = int(cantidad_str)
+         print(f"Vas a ingresar {cantidad} datos.")
+
         Luego pida esos elementos uno por uno.
+         datos = []  # Inicializamos una lista vacía
+         for i in range(cantidad):
+          dato = input(f"Ingresa el dato número {i + 1}: ")
+          datos.append(dato)
+         
         Finalmente, muestre la lista completa.
+
+         print(datos)
