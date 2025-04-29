@@ -4,8 +4,12 @@
    
     * Investiga qué son los arrays (o listas) en Python y para qué se utilizan.
       R/
-      *lista(list):* Son heterogeneas, contiene elementos de diferentes tipos de datos (enteros, floats, strings, booleanos, incluso otras listas u objetos). Su tamaño puede cambiar dinámicamente; puedes agregar o eliminar elementos fácilmente lo que las hace flexibles; pero debido a la flexibilidad de tipos, cada elemento en una lista se almacena como un objeto, lo que implica una mayor sobrecarga de memoria y aunque puedes realizar operaciones en bucle sobre ellas, no están optimizadas para cálculos numéricos a gran escala.
-      *Array(array.array):* Son homogeneos, todos los elementos dentro de un  array deben ser del mismo tipo y este tipo se identifica a la hora de crear el array. Un poco menos flexible tambien se puede agregar o eliminar elementos facilmente pero debes tener en cuenta la restriccion del tipo de dato. Al almacenar solo un tipo de dato, los arrays pueden ser más compactos en memoria, especialmente para grandes conjuntos de datos numéricos. Requieren importar el módulo array ya que no son una estructura de datos integrada directamente en Python como las listas.
+      *lista(list):* Son heterogeneas, contiene elementos de diferentes tipos de datos (enteros, floats, strings, booleanos, incluso otras listas u objetos). 
+Su tamaño puede cambiar dinámicamente; puedes agregar o eliminar elementos fácilmente lo que las hace flexibles; pero debido a la flexibilidad de tipos, 
+cada elemento en una lista se almacena como un objeto, lo que implica una mayor sobrecarga de memoria y aunque puedes realizar operaciones en bucle sobre ellas, no están optimizadas para cálculos numéricos a gran escala.
+      *Array(array.array):* Son homogeneos, todos los elementos dentro de un  array deben ser del mismo tipo y este tipo se identifica a la hora de crear el array. 
+Un poco menos flexible tambien se puede agregar o eliminar elementos facilmente pero debes tener en cuenta la restriccion del tipo de dato. Al almacenar solo un tipo de dato, 
+los arrays pueden ser más compactos en memoria, especialmente para grandes conjuntos de datos numéricos. Requieren importar el módulo array ya que no son una estructura de datos integrada directamente en Python como las listas.
       
       De manera resumida podemos concluir que una lista es como una caja donde podemos guardar diferentes tipos de elementos y un array es una caja diseñada específicamente para solo guardar un tipo de cosa
       
