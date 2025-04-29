@@ -172,9 +172,18 @@ Ejemplo práctico:
 
 6. ¿Cómo eliminamos elementos de una lista?
 
-    ¿Cómo se elimina un valor específico de una lista?
-    ¿Qué hace el método pop()?
-    ¿Cómo se elimina un elemento usando del?
+    * ¿Cómo se elimina un valor específico de una lista?
+      R/
+      Usando el método .remove():
+
+    * ¿Qué hace el método pop()?
+      R/
+      es una herramienta muy útil para eliminar y, al mismo tiempo, obtener un elemento de una lista en Python. 
+
+    * ¿Cómo se elimina un elemento usando del?
+      R/
+      La palabra clave del en Python es una forma poderosa y flexible de eliminar elementos de una lista (o incluso la lista completa). A diferencia del método .pop(), del no devuelve el valor del elemento eliminado; simplemente lo elimina.
+      del mi_lista[1]  # Elimina el elemento en el índice 1
 
 Ejemplo práctico:
 
