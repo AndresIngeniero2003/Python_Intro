@@ -179,6 +179,7 @@ Ejemplo práctico:
     * ¿Qué hace el método pop()?
       R/
       es una herramienta muy útil para eliminar y, al mismo tiempo, obtener un elemento de una lista en Python. 
+      Elimina el ultimo elemento y te trae el valor
 
     * ¿Cómo se elimina un elemento usando del?
       R/
@@ -189,32 +190,90 @@ Ejemplo práctico:
 
     De la lista [10, 20, 30, 40, 50], realiza las siguientes acciones:
         Elimina el número 30.
+         mi_lista.remove(30)
         Elimina el último elemento.
+         mi_lista.pop()
         Elimina el segundo elemento (índice 1).
+         del mi_lista[1]
 
 7. ¿Cómo buscamos elementos dentro de una lista?
 
-    ¿Cómo se verifica si un elemento está presente en una lista?
-    ¿Cómo encontrar el índice de un elemento?
-    ¿Cómo contar cuántas veces aparece un valor en la lista?
+    * ¿Cómo se verifica si un elemento está presente en una lista?
+      R/
+      la forma más sencilla y legible de verificar si un elemento está presente en una lista es utilizando el operador in
+      mi_lista = ['manzana', 'banana', 'naranja', 'uva']
+
+      if 'banana' in mi_lista:
+        print("¡Sí, 'banana' está en la lista!")
+      else:
+        print("No, 'banana' no está en la lista.")
+
+    * ¿Cómo encontrar el índice de un elemento?
+      R/
+      para encontrar el índice de un elemento en una lista de Python, puedes usar el método index(). Tener en cuenta 
+      que si el elemento que buscas aparece varias veces en la lista, el método index() devolverá el índice de la primera ocurrencia.
+      elemento = mi_lista.index(elemento)
+
+    * ¿Cómo contar cuántas veces aparece un valor en la lista?
+      Para contar cuántas veces aparece un valor específico en una lista de Python, puedes utilizar el método count().
+      cantidad = mi_lista.count(valor_a_contar)
 
 Ejemplo práctico:
 
     Con la lista [10, 20, 30, 40, 50]:
         Verifica si el número 20 está en la lista.
+         if 20 in mi_lista:
+             print("encontrado")
+         else:
+             print("No encontrado")
+
         Encuentra el índice del número 30.
+         indice = mi_lista.index(50)
+         print(indice)
+
         Cuenta cuántas veces aparece el número 20.
+         cantidad = mi_lista.count(20)
+         print(cantidad)
 
 8. ¿Cómo ordenamos los elementos de una lista?
 
-    ¿Cómo se ordena una lista de manera ascendente?
-    ¿Cómo se ordena en orden descendente?
-    ¿Qué diferencia hay entre sort() y sorted()?
+    * ¿Cómo se ordena una lista de manera ascendente?
+      R/
+      Hay dos formas de ordenar una lista de forma ascendente
+      
+      Usando el método sort(): Este método modifica la lista original directamente, ordenándola in-place (en el lugar).
+      mi_lista = [3, 1, 4, 1, 5, 9, 2, 6]
+      mi_lista.sort()
+      print(mi_lista)  # Salida: [1, 1, 2, 3, 4, 5, 6, 9]
+
+      Usando la función sorted(): Esta función devuelve una nueva lista ordenada, dejando la lista original sin modificar.
+      mi_lista_original = [3, 1, 4, 1, 5, 9, 2, 6]
+      mi_lista_ordenada = sorted(mi_lista_original)
+      print(mi_lista_original) # Salida: [3, 1, 4, 1, 5, 9, 2, 6]
+      print(mi_lista_ordenada) # Salida: [1, 1, 2, 3, 4, 5, 6, 9]
+
+    * ¿Cómo se ordena en orden descendente?
+      R/
+      Para ordenar una lista en orden descendente en Python, puedes usar tanto el método sort() como la función sorted(), pero con un parámetro adicional: reverse=True.
+
+      mi_lista = [3, 1, 4, 1, 5, 9, 2, 6]
+      mi_lista.sort(reverse=True)
+      print(mi_lista)  # Salida: [9, 6, 5, 4, 3, 2, 1, 1]
+
+      mi_lista_original = [3, 1, 4, 1, 5, 9, 2, 6]
+      mi_lista_ordenada_desc = sorted(mi_lista_original, reverse=True)
+      print(mi_lista_original)    # Salida: [3, 1, 4, 1, 5, 9, 2, 6]
+      print(mi_lista_ordenada_desc) # Salida: [9, 6, 5, 4, 3, 2, 1, 1]
+
+    * ¿Qué diferencia hay entre sort() y sorted()?
+      R/
+      La diferencia fundamental entre sort() y sorted() en Python radica en si modifican la lista original o si devuelven una nueva lista ordenada.
 
 Ejemplo práctico:
 
     Ordena la lista [40, 10, 30, 20]:
         Primero en orden ascendente.
+         
         Luego en orden descendente.
         Crea una nueva lista ordenada sin modificar la original.
 
