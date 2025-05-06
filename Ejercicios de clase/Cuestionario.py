@@ -371,7 +371,7 @@ if pregunta1.lower() == "si" or pregunta1.lower() == "no":
                     puntaje = puntaje + 0
             elif pregunta3.lower == "negra":
                 puntaje = puntaje + 0
-                regunta4 = input("¿De que color es tu cabello?(rubio - negro - rojo) ")
+                pregunta4 = input("¿De que color es tu cabello?(rubio - negro - rojo) ")
                 if pregunta4.lower() == "rubio":
                     puntaje = puntaje + 0
                 elif pregunta4.lower() == "negro":
