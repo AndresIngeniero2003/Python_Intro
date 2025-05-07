@@ -60,7 +60,7 @@ def mostrar():
     else:
         for nombre, telefono in diccionario.items()   :
             print(f"Nombre: {nombre} Telefono: {telefono}\n")
-    
+        
     
 
 inicio = True
