@@ -1,8 +1,6 @@
 #store product inventory  --- EJERCICIO HECHO CON LISTAS QUE CONTIENEN DICCIONARIOS Y A SU VEZ ESTOS CONTIENEN DUPLAS
 
 #global variable
-# list_product = []
-dicc_productos = {}
 list_product = []
 
 #functions
@@ -20,7 +18,7 @@ def menu():
                         5. Calcular total del inventario
                         6. Salir
                         opcion -->  """))
-        if option.isdigit(): 
+        if option.isdecimal(): 
             rank = int(option)
             if 1 <= rank <= 6:
                 match rank:
@@ -28,25 +26,25 @@ def menu():
                         print("\nVamos a añadir un nuevo producto!\n")
                         name = input("Ingresa el nombre del producto:  ").lower().strip()
                         while True:
-                            try:
-                                price = float(input("Ingresa el precio del producto:  "))
+                            str_price = input("Ingresa el precio del producto:  ")
+                            if str_price.isdecimal():
+                                price = float(str_price)
                                 if price >= 0:
                                     break 
                                 else:
                                     print("El precio no puede ser negativo")
-                            except:
-                                print("Entrada incorrecta para el precio, ingresa un número\n")
-
+                            else:
+                                print("Solo puedes ingresar numeros\n")
                         while True:
-                            try:
-                                quantity = int(input("Ingresa la cantidad del producto:  "))
+                            str_quantity = input("Ingresa la cantidad del producto:  ")
+                            if str_quantity.isdecimal():
+                                quantity = int(str_quantity)
                                 if quantity >= 0:
                                     break 
                                 else:
                                     print("La cantidad no puede ser negativa\n")
-                            except:
-                                print("Entrada incorrecta para la cantidad, ingresa un número entero.\n")
-        
+                            else:
+                                print("Solo puedes ingresar numeros\n")                                    
                         add_product(name, price, quantity)
                     case 2:
                         print("\nVamos a consultar un producto\n")
@@ -60,15 +58,15 @@ def menu():
                         print("\nVamos a actualizar el precio de un producto\n")
                         name = input("Ingresa el nombre del producto:  ").lower().strip()
                         while True:
-                            try:
-                                price = float(input("Ingresa el precio del producto:  "))
+                            str_price = input("Ingresa el precio del producto:  ")
+                            if str_price.isdecimal():
+                                price = float(str_price)
                                 if price >= 0:
                                     break 
                                 else:
                                     print("El precio no puede ser negativo")
-                            except:
-                                print("Entrada incorrecta para el precio, ingresa un número\n")
-                        
+                            else:
+                                print("Solo puedes ingresar numeros\n")                        
                         update_product(name, price)
                     case 4:
                         print("\nVamos a eliminar un producto\n")
