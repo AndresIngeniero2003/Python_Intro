@@ -72,7 +72,8 @@ def menu():
                         update_product(name, price)
                     case 4:
                         print("\nVamos a eliminar un producto\n")
-                        delete_product()
+                        name = input("Ingresa el nombre del producto:  ").lower().strip()
+                        delete_product(name)
                     case 5:
                         print("\nVamos a calcular el total del inventario\n")
                         inventory_total()
@@ -112,13 +113,28 @@ def update_product(name, price):
             validate = True
             print(f"\nNombre: {name} \nPrecio actualizado: {product[name][0]}")
     if not validate :
-        print(f"El profucto {name} no se enceuntra")
+        print(f"El producto {name} no se encuentra")
 
-def delete_product():
-    print
+def delete_product(name):
+    validate = False
+    indice = -1
+    for i, product in enumerate(list_product):
+        if name in product:
+            indice = i
+            validate = True
+            break
+    if not validate :
+        print(f"El producto {name} no se encuentra")
+    else:
+        del list_product[indice]
     
 def inventory_total():
-    print
+    total_producto = lambda item: list(item.values())[0][0] * list(item.values())[0][1]
+
+    valores_productos = map(total_producto, list_product)
+    total_inventario = sum(valores_productos)
+
+    print(f"El valor total del inventario es: ${total_inventario}")
 
 #program start
 print("Iniciando software de inventarios..........\n")
