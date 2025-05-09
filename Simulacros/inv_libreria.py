@@ -2,11 +2,11 @@
 
 #Variables globales
 list_Inventory = [
-    {"title": "el hombre mas rico de babilonia", "price": 20000.0, "quantity": 100},
-    {"title": "el monje que vendio su ferrari", "price": 15000.0, "quantity": 50},       
-    {"title": "padre rico padre pobre", "price": 30000.0, "quantity": 90},
-    {"title": "piense y hagase rico", "price": 25000.0, "quantity": 850},
-    {"title": "sangre de campeon", "price": 10000.0, "quantity": 18}
+    {"title": "el hombre mas rico de babilonia", "price": 20000.0, "quantity": 10},
+    {"title": "el monje que vendio su ferrari", "price": 15000.0, "quantity": 9},       
+    {"title": "padre rico padre pobre", "price": 30000.0, "quantity": 12},
+    {"title": "piense y hagase rico", "price": 25000.0, "quantity": 15},
+    {"title": "sangre de campeon", "price": 10000.0, "quantity": 3}
 ]               #list of dictionaries with keys(title, price, quantity)
 
 #Functions
@@ -129,7 +129,7 @@ def delete_book(str_name):
     thisBook = False
     index = -1
     for i,book in enumerate(list_Inventory):
-        if str_name in book:
+        if str_name == book["title"]:
             index =  i
             thisBook = True
             break
@@ -144,7 +144,7 @@ def inventory_total():
         flt_price = book["price"]
         int_quantity = book["quantity"]
         total_inv = total_inv + flt_price*int_quantity
-    print(f"El total del inventario de libros es: {total_inv}")
+    print(f"The total book inventory is: {total_inv}")
 
 
 #Program start
