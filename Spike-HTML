@@ -1,8 +1,22 @@
 # Spike [Consulta HTML]
 ## OBJETIVO
+Con este spike quiero introducime a HTML, averiguar sobre conceptos basicos y avanzados 
 ## CONTEXTO
+Este spike es necesario y util para arrancar y introducirse por primera vez al HTML ya que se presentan conceptos bases para empezar en este campo
 ## ALCANCE
+En esta investigacion voy a cubrir conocimientos basicos y queda por fuera los temas mas avanzados y complejos
 ## PREGUNTAS A RESOLVER
+1. ¿Que es HTML?
+Lenguaje de Marcado de Hipertexto. Es el lenguaje de marcado estandar utilizado para crear y estructurar paginas. En este lenguaje se define la estructura y el contenido de una pagina como el texto, enlaces, videos y entre otros recursos de multimedia. Es la base fundamental de cualquier pagina web
+¿Como funciona?
+Funciona como un lenguaje de marcado, definiendo la estructura y contenido de una página web. El navegador interpreta las etiquetas HTML para mostrar la página, indicando cómo organizar texto, imágenes, enlaces y otros elementos 
+Las etiquetas definen los elementos de la página, como párrafos (<p>), encabezados (<h1>), imágenes (<img>) y enlaces (<a>)
+El navegador lee el código HTML, interpreta las etiquetas y atributos, y luego muestra la página web de acuerdo con las instrucciones proporcionadas
+¿Que puedo hacer con el?
+
+¿Donde puedo practicar?
+Datos curiosos
+¿Quien es el creador?
 ## CRISTERIOS DE ACEPTACION
 ## INVESTIGACION Y HALLAZGOS
 ## RECOMENDACIONES / CONCLUSIONES
