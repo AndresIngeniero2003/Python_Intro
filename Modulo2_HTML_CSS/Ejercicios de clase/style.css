@@ -1,0 +1,21 @@
+.Cabeza{
+    text-align: center;
+}
+
+.barra{
+    text-align: center;
+}
+
+.cuerpo{
+    background: linear-gradient(orange, white);    
+}
+
+div, p{
+    text-align: center
+    
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
