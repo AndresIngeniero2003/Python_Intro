@@ -1,0 +1,52 @@
+*{
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-image: linear-gradient(to right,#d81313, #ffe601, #f18901);
+    padding: 0px;
+    margin: 0px;
+
+}
+
+img{
+    margin-top: 40px;
+}
+
+.cabeza{
+    text-align: center;
+}
+
+.titulo{
+    color: #f18901;
+}
+
+span{
+  font-style:italic;
+  color: #d81313;
+}
+
+.navbar{
+    display: flex;
+    background-color: gray;
+    background-color: #0000003d;
+    justify-content:space-around;
+    align-items: center;
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+.enlace{
+    text-decoration: none;
+    color: black;
+    border: solid 1px;
+    padding: 15px 30px;
+    border-radius: 14px;
+}
+
+.enlace:hover{
+    color: #ff000083;
+    text-decoration: underline;
+}
