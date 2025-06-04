@@ -1,0 +1,27 @@
+.enlace{
+    text-decoration: none;
+    color: black;
+}
+
+#border{
+    border: solid 1px;
+    border-radius: solid 100px;     
+    padding: 20px;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-around
+}
+
+.contenido{
+    display: flex;
+}
+
+h1{
+    font-size:xx-large;
+}
+
+article{
+
+}
