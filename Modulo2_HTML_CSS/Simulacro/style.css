@@ -1,0 +1,171 @@
+:root{
+    --fuente-principal: sans-serif;
+    --color-bonotones: blue;
+}
+
+html {
+  scroll-behavior: smooth;  /* Smooth scrolling (opcional) */
+}
+
+
+
+/* Estilos generales */
+*{
+    text-decoration: none;
+    font-family: var(--fuente-principal);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos al header */
+header{
+    padding: 30px 60px;
+    color: white;
+    background-image: url(./Assets/img/img/banner.webp);
+    height: 33rem;
+    background-size: cover;
+}
+
+.contenedor-navbar{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+/* logo */
+.logo{
+    font-size: 30px;
+    color: white;
+    font-weight:100;
+}
+
+.enlaces{
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.contenido-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+
+}
+
+.contenedor-navbar-footer{
+    padding: 30px 60px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 60px;
+}
+
+.titulo-header{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+/* Anteriormente se le dieron estilos a todo lo contenido por el header y el footer */
+
+/* Estilos a todo lo que contiene el main */
+
+main{
+    padding: 30px 60px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+img{
+    height: 520px ;
+    width: 760px;
+}
+
+h3,h4{
+    font-size: 25px;
+}
+
+.articulo{
+    padding: 15px;
+}
+
+article p{
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.button-article{
+    background: black;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight:bolder;
+    margin: 20px 0;
+}
+
+.button-informacion{
+    background: #784d3c;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight:bolder;
+    margin: 20px 0;
+    border: none;
+}
+
+.P-negrita{
+    font-weight: bolder;
+}
+
+.Normal{
+    font-weight: normal;
+}
+
+
+/* animaciones */
+/* efectos con hover */
+
+div:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+
+img:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+div:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+/* mapa */
+
+.mapa-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f4f4f4;
+}
+
+.titulo-mapa {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.mapa-container {
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  border: 6px solid #8b5e3c;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
