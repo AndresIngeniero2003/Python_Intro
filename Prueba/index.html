@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Assets/icono.png">   
+    <link rel="stylesheet" href="style.css">
+    <title>Andres Restrepo</title>
+</head>
+<body>
+    <header>
+        <section class="contenedor-nav">
+            <h1 class="titulo-h1">Portafolio <span class="negrita">Web</span> Andres <span class="negrita">Restrepo</span></h1>
+            <nav class="navbar">
+                <a href="#" class="enlaces">Inicio</a>
+                <a href="#presentacion" class="enlaces">Presentacion</a>
+                <a href="#proyectos" class="enlaces">Proyectos</a>
+                <a href="#contacto" class="enlaces">Contacto</a>
+            </nav>
+        </section>
+        <section class="texto-header">
+            <p>Todos los dias es una nueva oportunidad de aprender algo nuevo, nunca pares</p>
+        </section>
+    </header>
+    <main>
+        <section id="presentacion">
+            <div class="contenedor-img">
+                <img src="./Assets/photoPerfil.jpeg" alt="FotoDev" class="perfile">
+            </div>
+            <div class="contenedor-informacion-personal">
+                <h2 class="negrita">Presentacion personal</h2>
+                <p class="texto">Mi nombre es Andres Felipe Restrepo Ramirez, me apasiona la tecnologia desde que era un niño, soy un desarrollador creativo, responsable que le encanta cumplir con las expectativas de sus clientes y dar un poco mas ya que cuando uno trabaja en lo que gusta nunca sera un problema dar lo mejor. <br>Actualemnte voy a la universidad quiero obtener mi titulo profesional como desarrollador de software y a futuro convertirme en ingeniero. A parte estudio en Riwi donde estoy enfocandome completamente en mi carrera.</p>
+                <h2 class="negrita">Tecnolgias usadas</h2>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+        </section id="proyectos">
+            <article class="carta">
+                <h2 class="negrita">Pagina web Dragon Ball</h2>
+                <img src="./Assets/proyecto1.png" alt="" class="img-proyectos">
+                <p class="texto">Una de mis primeras paginas en honor a una de mis caricaturas favoritas</p>
+            </article>
+            <article class="carta">
+                <h2 class="negrita">NinjaGo</h2>
+                <img src="./Assets/ninjago-jay.gif" alt="" class="img-proyectos">
+                <p class="texto">Seria de caricaturas animadas de las figuras coleccionables LEGO</p>
+            </article>
+            <article class="carta">
+                <h2 class="negrita">SaveUp</h2>
+                <img src="./Assets/SaveUp.gif" alt="" class="img-proyectos">
+                <p class="texto">Toda mi vida eh sido una persona que a ahorrado para cumplir sus metas lo que me inspiro a crear mi aplicativo contable para llevar todas mis cuentas sobre gastos y ingresos</p>
+            </article>
+        <section id="contacto">
+            <div>
+                <h2>Formulario de contacto</h2>
+                <form action="/send" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="text" name="name" required> <br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required> <br>
+
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" rows="4" required></textarea> <br>
+
+                    <br> <input type="submit" value="send">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-nav">
+            <h1 class="titulo-h1">Portafolio <span class="negrita">Web</span> Andres <span class="negrita">Restrepo</span></h1>
+            <nav class="navbar">
+                <a href="#" class="enlaces">Inicio</a>
+                <a href="#" class="enlaces">Formacion</a>
+                <a href="#" class="enlaces">Proyectos</a>
+                <a href="#" class="enlaces">Contacto</a>
+            </nav>
+        </section>
+        <section class="footer-text">
+            &copy; <p>Andres Restrepo <span class="negrita">DEV</span></p>
+        </section>
+    </footer>
+</body>
+</html>

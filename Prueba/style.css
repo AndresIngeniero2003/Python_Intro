@@ -1,0 +1,56 @@
+:root{
+    --fuente-principal: "Cherry Bomb One", system-ui;
+    --color-fondo: ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;  
+}
+
+
+/* Estilos para header */
+header{
+    background: linear-gradient(rgb(42, 42, 201),rgb(70, 169, 235),rgb(236, 232, 232));
+    height: 20%;
+    width: auto;
+    padding: 30px;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    border: solid 2px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.9s;
+}
+
+.navbar{
+}
+.contenedor-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.titulo-h1{
+    font-weight: normal;
+}
+.negrita{
+    font-weight: bolder;
+    color: blue;
+}
+
+a:hover{
+    color: blue;
+    text-transform: uppercase;
+    
+}
