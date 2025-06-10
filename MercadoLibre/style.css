@@ -14,9 +14,10 @@ nav{
     width: 1180px;
     height: 80px;
     padding: 8px 10px 12px 10px;
-    margin: 0 3px 0 3px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 3fr 2fr;
+    
 }
 
 .logoLetra{
@@ -31,4 +32,32 @@ nav{
 
 .logo-ubi{
     display: flex;
+}
+
+li{
+    list-style: none;
+}
+
+.lista-input, .lista-publicidad {
+    display: flex;
+    gap: 10px;
+}
+
+.carrito{
+    width: 22px;
+    height: 25px;
+}
+
+.img-publicidad{
+    width: 380px;
+    height: 40px;
+}
+
+.input-search{
+    width: 500px;
+    height: 32px;
+}
+
+.contenedor-logos{
+    
 }
