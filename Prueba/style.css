@@ -139,7 +139,9 @@ h2, p{
 }
 
 /* Estilos para mi formulario */
-.contacto{
+
+
+/* .contacto{
     justify-content:center ;
     align-items: center;
     height: auto;
@@ -196,7 +198,7 @@ label{
 
 .titulo-formulario{
     margin: 3%;
-}
+} */
 
 
 /* Estilos para footer */
