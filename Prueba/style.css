@@ -4,7 +4,7 @@
 
 *{
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
 
@@ -31,7 +31,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
 .texto-header{
@@ -76,7 +76,7 @@ a:hover{
 .contenedor-informacion-personal{
     width: 21%;
     text-align: center;
-    margin: 3% 40%;    
+    margin: 3% 40%;
 }
 
 h2{
@@ -235,7 +235,7 @@ footer{
 
 /* media querys */
 @media (max-width: 480px){
-    
+
     .contenedor-nav, .footer-nav{
         display: flex;
         flex-wrap: wrap;
@@ -259,7 +259,7 @@ footer{
 }
 
 @media (max-width: 768px){
-    
+
     .contenedor-nav, .footer-nav{
         display: flex;
         flex-wrap: wrap;
@@ -284,7 +284,7 @@ footer{
 
 
 @media (max-width: 1024px){
-    
+
     .contenedor-nav, .footer-nav{
         display: flex;
         flex-wrap: wrap;

@@ -6,7 +6,7 @@
 }
 
 header{
-    background-color: #FFF000;
+    background-color: #ffe600;
     margin: auto;
 }
 
@@ -25,12 +25,21 @@ nav{
     height: 40px;
 }
 
-.logoUbi{
-    width: 22px;
-    height: 25px;
+.logoUbi{  /*reglas de la imagen*/
+    width: 19px;
+    height: 22px;
 }
 
-.logo-ubi{
+.texto-logo-ubi{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.438);
+}
+
+.black-text-logo{
+    color: black;
+}
+
+.logo-ubi{ /*reglas del contenedor*/
     display: flex;
 }
 
@@ -58,6 +67,56 @@ li{
     height: 32px;
 }
 
+
+a:hover, .logo-ubi, .contenedor-list, .contenedor-publicidad{
+    cursor: pointer;
+}
+
+.contenedor-input-list, .contenedor-publicidad{
+    display: grid;
+    gap: 15px;
+}
+
 .contenedor-logos{
+    display: grid;
+    gap: 2px;
+}
+
+.contenedor-input{
+    border: none;
+}
+
+.lista-publicidad{
+    margin-left: 24%;
+}
+
+
+
+/* Estilos de fondo abajo navbar */
+.imagen-app{
+    height: 100%;
+    width: 100%;
+    background-color: #ffe600;
+}
+
+.img-edit{    
+    position: absolute;
+}
+
+.tarjeta-productos{
+    position: absolute;
+    height: 285px;
+    width: 183px;
+    border: solid 3px;
+}
+
+.article-img{
+    height: 105px; 
+    width: 105px;
     
+}
+
+.article-h4{
+    text-align: center;
+    margin: ;
 }
