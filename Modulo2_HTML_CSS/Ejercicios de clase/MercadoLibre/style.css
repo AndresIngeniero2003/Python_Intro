@@ -96,7 +96,6 @@ a:hover, .logo-ubi, .contenedor-list, .contenedor-publicidad{
 .imagen-app{
     height: 100%;
     width: 100%;
-    background-color: #ffe600;
 }
 
 .img-edit{    
@@ -118,5 +117,15 @@ a:hover, .logo-ubi, .contenedor-list, .contenedor-publicidad{
 
 .article-h4{
     text-align: center;
-    margin: ;
+}
+
+/*Estilos gradiente imagen señor*/
+.gradient{
+    background: linear-gradient(180deg,transparent,#ebebeb);
+    bottom: 0;
+    height: 30%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
 }
